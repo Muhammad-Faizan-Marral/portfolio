@@ -1,0 +1,70 @@
+@import "tailwindcss";
+:root {
+  /* Backgrounds & Base */
+  --bg-primary: #0e0e0e; /* Main deep dark background */
+  --bg-secondary: #141414; /* Card and section backgrounds */
+  --bg-tertiary: #1c1c1c; /* Input fields and hover states */
+
+  /* Brand & Accents */
+  --primary: #3b82f6; /* Electric Blue used in gradients and text */
+  --secondary: #8b5cf6; /* Vibrant Purple used in gradients */
+  --accent-cyan: #22d3ee; /* Cyan highlight for "Developer" and icons */
+
+  /* Text & Content */
+  --text-main: #ffffff; /* Pure white for headings */
+  --text-muted: #a1a1aa; /* Gray for body text and descriptions */
+  --text-dim: #71717a; /* Darker gray for timestamps and labels */
+
+  /* Borders & Overlays */
+  --border-glass: rgba(255, 255, 255, 0.1); /* Subtle glassmorphism border */
+  --overlay-dark: rgba(0, 0, 0, 0.4); /* Card hover overlays */
+
+  /* Functional Colors */
+  --success: #10b981; /* Green for "Available for Freelance" status */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dot-animation {
+  animation: pulse-glow 1.2s ease-in-out infinite alternate;
+}
+@keyframes pulse-glow {
+  from {
+    background-color: rgba(1, 88, 1, 0.61);
+    box-shadow: 0 0 0px rgba(0, 218, 0, 0);
+  }
+  to {
+    background-color: rgb(0, 218, 0);
+    box-shadow: 0 0 8px rgb(6, 41, 6);
+  }
+}
+.arrow-movements {
+  animation: premium-bounce 1.5s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
+}
+
+@keyframes premium-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
