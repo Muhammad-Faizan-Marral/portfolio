@@ -1,16 +1,23 @@
+
 import React from "react";
+import dynamic from "next/dynamic";
+
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
 import MainBg from "./components/MainBg.jsx";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
 import Form from "./components/Form";
 import Experience from "./components/Experience";
 
+const Skills = dynamic(() => import("./components/Skills"), {
+  loading: () => <p>Loading...</p>,
+});
+const Projects = dynamic(() => import("./components/Projects"), {
+  loading: () => <p>Loading...</p>,
+});
 const page = () => {
   return (
-    <div>
+    <div className="">
       <Header/>
       <MainBg/>
       <Home />

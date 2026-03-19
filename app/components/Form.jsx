@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { mailer } from "../service/nodeMailer";
+
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -10,7 +10,7 @@ const Form = () => {
   });
 
   const [errors, setErrors] = useState({});
-  const [notification, setNotification] = useState(null); // { type: 'success' | 'error', message: '' }
+  const [notification, setNotification] = useState(null); 
   const [isLoading, setIsLoading] = useState(false);
 
   const validateEmail = (email) => {

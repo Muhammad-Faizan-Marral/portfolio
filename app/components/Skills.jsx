@@ -1,5 +1,6 @@
-"use client";
+
 import React from "react";
+import { SkillCard } from "./SkillCard";
 
 const skills = [
   {
@@ -87,7 +88,7 @@ const skills = [
 const Skills = () => {
   return (
     <section
-      className="relative py-12  bg-[#050505] overflow-hidden border-t-[0.5px] border-b-[0.5px] border-[#1c1c1c]"
+      className=" relative py-12  bg-[#050505] overflow-hidden border-t-[0.5px] border-b-[0.5px] border-[#1c1c1c] brightness-110"
       id="skills"
     >
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -102,59 +103,12 @@ const Skills = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-2 ">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-2">
           {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="group relative aspect-square rounded-xl bg-zinc-900/20 border border-white/[0.03] backdrop-blur-sm transition-all duration-700 hover:border-blue-500/30 hover:bg-zinc-900/40 overflow-hidden cursor-default"
-              style={{
-                animation: `fadeInScale 0.6s ease-out ${index * 0.05}s both`,
-              }}
-            >
-              <div className="absolute -inset-[1px] bg-gradient-to-br from-blue-500/0 via-blue-500/5 to-blue-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-xl" />
-
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-blue-500/20 rounded-xl" />
-              </div>
-
-              <div className="relative z-10 h-full flex flex-col items-center justify-center gap-4 p-4">
-                <svg
-                  className={`w-8 h-8 text-zinc-600 transition-all duration-700 group-hover:scale-125 group-hover:-rotate-6  ${skill.color}`}
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  viewBox="0 0 24 24"
-                >
-                  <path d={skill.icon} />
-                </svg>
-
-                <span className="text-[10px] font-medium tracking-[0.15em] text-zinc-600 uppercase group-hover:text-zinc-300 transition-colors duration-500 text-center leading-tight">
-                  {skill.name}
-                </span>
-              </div>
-
-          
-              <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-12" />
-            </div>
+            <SkillCard key={skill.name} skill={skill} index={index} />
           ))}
         </div>
       </div>
-
-      {/* Animations */}
-      <style jsx>{`
-        @keyframes fadeInScale {
-          from {
-            opacity: 0;
-            transform: scale(0.9);
-          }
-          to {
-            opacity: 1;
-            transform: scale(1);
-          }
-        }
-      `}</style>
     </section>
   );
 };

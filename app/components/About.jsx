@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div id="about" className="lg:h-screen flex items-center justify-around gap-7 flex-col-reverse lg:flex-row  p-10">
+    <div id="about" className=" lg:h-screen flex items-center justify-around gap-7 flex-col-reverse lg:flex-row  p-10">
 
       <section className="w-[86vw] sm:h-[80vw] md:h-full lg:w-[37rem] ">
         <div className="">
@@ -110,7 +110,7 @@ const About = () => {
       </section>
 
       <section>
-        <div className="group relative h-[95vh] w-[85vw] lg:h-[34rem] lg:w-[30rem] rounded-2xl border-[1px] border-gray-100/10 transition-all duration-700 ease-in-out backdrop-blur-2xl bg-[rgba(255,255,255,0.03)] flex items-center justify-center hover:border-[#3b82f6] hover:shadow-2xl hover:shadow-blue-500/40">
+        <div className="brightness-110 group relative h-[95vh] w-[85vw] lg:h-[34rem] lg:w-[30rem] rounded-2xl border-[1px] border-gray-100/10 transition-all duration-700 ease-in-out backdrop-blur-2xl bg-[rgba(255,255,255,0.03)] flex items-center justify-center hover:border-[#3b82f6] hover:shadow-2xl hover:shadow-blue-500/40">
           <div className="bg-[#111111] h-[88vh] w-[77vw] lg:h-[30rem] lg:w-[26rem] rounded-2xl border-[0.5px] border-white/10 overflow-hidden shadow-2xl">
 
             <div className="bg-white/5 flex items-center justify-start pl-3.5 gap-3 w-full h-[2.2rem] border-b-[0.5px] border-white/10">
@@ -120,15 +120,15 @@ const About = () => {
             </div>
 
           
-            <div className="p-6 font-mono text-xs md:text-sm leading-relaxed bg-[#111111]">
+            <div className="p-6 font-mono text-xs md:text-sm leading-relaxed bg-[#111111] ">
               <div>
-                <span className="text-purple-400">const</span>{" "}
-                <span className="text-blue-400">developer</span> = {"{"}
+                <span className="text-purple-400 ">const</span>{" "}
+                <span className="text-blue-400 ">developer</span> = {"{"}
               </div>
 
               <div className="pl-4">
-                <span className="text-white">name</span>:{" "}
-                <span className="text-green-400">&apos;Muhammad Faizan&apos;</span>,
+                <span className="text-white ">name</span>:{" "}
+                <span className="text-green-400 ">&apos;Muhammad Faizan&apos;</span>,
               </div>
               <div className="pl-4">
                 <span className="text-white">passion</span>:{" "}

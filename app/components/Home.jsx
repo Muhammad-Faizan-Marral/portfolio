@@ -1,8 +1,10 @@
+
+import Link from "next/link";
 import React from "react";
 
 const Home = () => {
   return (
-    <div className="flex items-center justify-center flex-col gap-5 mt-36">
+    <div className="brightness-125 flex items-center justify-center flex-col gap-5 mt-36">
       <header>
         <div className="isAvailableSection border-[0.5px] border-[#464545] w-52 p-1.5 h-6 rounded-full bg-white/5 flex items-center justify-center gap-2.5">
           <div className="dot-animation h-2 w-2 rounded-full"></div>
@@ -15,21 +17,23 @@ const Home = () => {
       <main className="flex items-center justify-center ">
         <h1 className="text-[13vw] lg:text-[7.4vw] font-extrabold tracking-tighter leading-[1] text-center">
           Front-End <br />
-          <span className="bg-[linear-gradient(140deg,rgba(11,160,219,1)_28%,rgba(102,87,199,1)_49%,rgba(156,0,143,1)_64%)] bg-clip-text text-transparent inline-block drop-shadow-sm">Developer</span>
+          <span className="bg-[linear-gradient(140deg,rgba(11,160,219,1)_28%,rgba(102,87,199,1)_49%,rgba(156,0,143,1)_64%)] bg-clip-text text-transparent inline-block drop-shadow-sm">
+            Developer
+          </span>
         </h1>
       </main>
 
       <section>
         <p className="text-[#a1a1aa] max-w-160 px-6 sm:text-[19px] md:text-[21px] tracking-tight font-light text-center leading-[1.7rem]">
-        I craft pixel-perfect digital experiences with a focus on motion, interaction, and accessibility — bridging the gap between design and engineering.
-
-
+          I craft pixel-perfect digital experiences with a focus on motion,
+          interaction, and accessibility — bridging the gap between design and
+          engineering.
         </p>
       </section>
 
       <footer className="mt-3 ">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4  w-[90vw]">
-          <a
+          <Link
             className="w-full sm:w-auto px-8 py-4 rounded-full text-white font-bold 
                  shadow-lg shadow-blue-500/20 transition-all duration-300
                  hover:scale-[1.05] active:scale-[0.98]
@@ -39,7 +43,7 @@ const Home = () => {
             href="#projects"
           >
             View Projects
-          </a>
+          </Link>
 
           <a
             className="w-full sm:w-auto px-8 py-4 rounded-full bg-transparent border border-white/10 
@@ -54,7 +58,7 @@ const Home = () => {
 
       <div className="mt-0.5 arrow-movements">
         <svg
-          class="w-6 h-6 text-gray-800 dark:text-white"
+          className="w-6 h-6 text-gray-800 dark:text-white"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -64,9 +68,9 @@ const Home = () => {
         >
           <path
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="m19 9-7 7-7-7"
           />
         </svg>
