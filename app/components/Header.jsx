@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Header = () => {
@@ -17,13 +18,13 @@ const Header = () => {
         </div>
 
         <nav className="items-center justify-center gap-7 text-[#a1a1aa] text-[15px] hidden lg:flex ">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
+          <Link href="#about">About</Link>
+          <Link href="#skills">Skills</Link>
+          <Link href="#projects">Projects</Link>
+          <Link href="#experience">Experience</Link>
         </nav>
         <div className="items-center justify-end hidden lg:flex ">
-          <a
+          <Link
             className="px-5 py-2.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-white text-sm font-medium transition-all hover:scale-105 active:scale-95 flex items-center gap-2"
             href="#contact"
           >
@@ -47,7 +48,7 @@ const Header = () => {
                 />
               </svg>
             </span>
-          </a>
+          </Link>
         </div>
 
         <div className="lg:hidden md:block ">
@@ -105,20 +106,20 @@ const Header = () => {
       ) : (
         <div className="md:block lg:hidden  fixed top-16 left-0 w-full z-50   bg-black/10 backdrop-blur-xl border-b border-white/10">
           <nav className="flex items-center justify-center flex-col gap-7 text-[#a1a1aa] text-[15px]  bg-black/10 backdrop-blur-xl">
-            <a href="#about" className="cursor-pointer hover:text-white">
+            <Link href="#about" className="cursor-pointer hover:text-white">
               About
-            </a>
-            <a href="#skills" className="cursor-pointer hover:text-white">
+            </Link>
+            <Link href="#skills" className="cursor-pointer hover:text-white">
               Skills
-            </a>
-            <a href="#projects" className="cursor-pointer hover:text-white">
+            </Link>
+            <Link href="#projects" className="cursor-pointer hover:text-white">
               Projects
-            </a>
-            <a href="#experience" className="cursor-pointer hover:text-white">
+            </Link>
+            <Link href="#experience" className="cursor-pointer hover:text-white">
               Experience
-            </a>
+            </Link>
             <div className="flex items-center justify-end ">
-              <a
+              <Link
                 className=" w-screen py-2.5  bg-white/5 hover:bg-white/10 border border-white/10 text-white text-sm font-medium transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2"
                 href="#contact"
               >
@@ -142,7 +143,7 @@ const Header = () => {
                     />
                   </svg>
                 </span>
-              </a>
+              </Link>
             </div>
           </nav>
         </div>

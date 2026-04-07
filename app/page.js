@@ -10,10 +10,10 @@ import Form from "./components/Form";
 import Experience from "./components/Experience";
 
 const Skills = dynamic(() => import("./components/Skills"), {
-  loading: () => <p>Loading...</p>,
+  loading: () => <p className="min-h-100">Loading...</p>,
 });
 const Projects = dynamic(() => import("./components/Projects"), {
-  loading: () => <p>Loading...</p>,
+  loading: () => <p  className="min-h-100">Loading...</p>,
 });
 const page = () => {
   return (

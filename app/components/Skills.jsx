@@ -1,4 +1,3 @@
-
 import React from "react";
 import { SkillCard } from "./SkillCard";
 
@@ -73,15 +72,15 @@ const skills = [
     icon: "M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z",
     color: "group-hover:text-teal-400",
   },
-  {
-    name: "Framer",
-    icon: "M12 2L4 9v12l8 3 8-3V9l-8-7zm0 2.18L17.82 9 12 12.82 6.18 9 12 4.18z",
-    color: "group-hover:text-pink-500",
+ {
+    name: "TanStack Query",
+    icon: "M4.2 2.5l5.1 1.8-1.8 5.1zm15.6 19l-5.1-1.8 1.8-5.1zM16 4l4.5 9-1.5 6.5L4 13.5l1.5-6.5zm-5 13.5l2.5-2.5 1 2 2.5-3",
+    color: "group-hover:text-red-500",
   },
   {
-    name: "Node.js",
-    icon: "M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.5l7.5 3.75v7.5L12 19.5l-7.5-3.75v-7.5L12 4.5z",
-    color: "group-hover:text-green-600",
+    name: "Supabase",
+    icon: "M21 11.5a.83.83 0 0 0-.6-.2H13V3.7a.8.8 0 0 0-1.35-.58l-8 8a.8.8 0 0 0 .57 1.38H11v7.6a.8.8 0 0 0 1.35.58l8-8a.8.8 0 0 0-.35-1.38z",
+    color: "group-hover:text-emerald-500",
   },
 ];
 

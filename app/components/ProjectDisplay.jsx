@@ -21,14 +21,15 @@ const ArrowIcon = () => (
 export const ProjectCard = memo(({ project }) => {
   return (
     <div
-    onClick={() => window.open(project.urlToNavigate, "_blank", "noopener,noreferrer")}
+      onClick={() =>
+        window.open(project.urlToNavigate, "_blank", "noopener,noreferrer")
+      }
       className={`group relative rounded-2xl overflow-hidden bg-zinc-900/20 border border-white/[0.03] backdrop-blur-sm hover:border-blue-500/30 transition-all duration-700 cursor-pointer will-change-transform ${
         project.featured ? "md:col-span-2" : ""
       }`}
     >
       {/* Projects Images */}
       <div className="absolute inset-0">
-
         <Image
           fill
           src={project.image}
@@ -37,10 +38,11 @@ export const ProjectCard = memo(({ project }) => {
           sizes="(max-width: 768px) 100vw, 50vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/20 group-hover:via-black/90 transition-all duration-500" />
-        <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-700 mix-blend-overlay`}/>
-
+        <div
+          className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-700 mix-blend-overlay`}
+        />
       </div>
-        {/* Skills */}
+      {/* Skills */}
       <div className="absolute inset-0 p-8 flex flex-col justify-end z-10">
         <div className="flex flex-wrap gap-2 mb-4 md:opacity-0 md:-translate-y-4 md:group-hover:opacity-100 md:group-hover:translate-y-0 transition-all duration-500 ease-out">
           {project.skills.map((skill, i) => (
@@ -65,9 +67,9 @@ export const ProjectCard = memo(({ project }) => {
           </p>
 
           <div
-            className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center 
-            md:opacity-0 md:translate-y-4 md:group-hover:opacity-100 md:group-hover:translate-y-0 
-            transition-all duration-500 shadow-lg shadow-blue-500/40"
+            className={`flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center 
+              md:opacity-0 md:translate-y-4 md:group-hover:opacity-100 md:group-hover:translate-y-0 
+              transition-all duration-500 shadow-lg shadow-blue-500/40`}
           >
             <ArrowIcon />
           </div>

@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
 import { ProjectCard } from "./ProjectDisplay";
 const Projects = () => {
   const [showAll, setShowAll] = useState(false);
@@ -8,58 +7,65 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Ecommerce",
+      title: "E-Commerce Web Application",
       description:
-        "A comprehensive financial data visualization platform with real-time analytics, interactive charts, and advanced reporting features for enterprise clients.",
+        "A modern e-commerce platform with authentication, product browsing, pagination, wishlist, and cart system. Focused on smooth UX and optimized state management.",
       image: "/ecommerce.png",
-      skills: ["React", "TypeScript", "D3.js", "Tailwind"],
+      skills: [
+        "Next.js",
+        "TypeScript",
+        "Redux Toolkit",
+        "TanStack Query",
+        "TailwindCSS",
+      ],
       featured: true,
       gradient: "from-blue-600/20 to-cyan-600/20",
-      urlToNavigate:
-        "https://nextjs-fakeapi-ecommerce-uhl2.vercel.app/dashboard",
+      urlToNavigate:"https://nextjs-fakeapi-ecommerce-uhl2.vercel.app/dashboard",
     },
     {
       id: 2,
-      title: "k72",
+      title: "GenUI – AI SaaS UI Generator",
       description:
-        "Modern social networking platform with real-time chat, stories, and seamless user experience across devices.",
+        "A SaaS platform that generates UI from user prompts and deploys it instantly with shareable live URLs. Integrated AI APIs and Supabase for backend.",
+      image: "/genui.png",
+      skills: ["Next.js", "JavaScript", "Supabase", "TailwindCSS"],
+
+      gradient: "from-violet-600/20 to-purple-600/20",
+      urlToNavigate: "https://gen-p7b3slpk8-faizans-projects-89f12db9.vercel.app/",
+    },
+    {
+      id: 3,
+      title: "Interactive Website Clone (K72)",
+      description:
+        "A high-end interactive website clone focused on smooth animations and modern UI/UX using GSAP.",
       image: "/k72.png",
-      skills: ["React Native", "Node.js", "MongoDB"],
+      skills: ["React", "GSAP", "Vite", "TailwindCSS"],
       gradient: "from-purple-600/20 to-pink-600/20",
       urlToNavigate: "https://effulgent-donut-7d78fe.netlify.app/",
     },
     {
-      id: 3,
-      title: "Git hub wrapped",
+      id: 4,
+      title: "GitHub Wrapped",
       description:
-        "High-end fashion e-commerce platform with elegant design, smooth checkout flow, and integrated payment processing.",
+        "A GitHub insights web app that visualizes user activity and repositories with a clean and responsive interface.",
       image: "/git.png",
-      skills: ["Next.js", "Stripe", "Tailwind"],
-      gradient: "from-amber-600/20 to-orange-600/20",
+      skills: ["React", "TailwindCSS"],
+      featured: true,
+      gradient: "from-emerald-600/20 to-teal-600/20",
       urlToNavigate: "https://githubwrapped-lyart.vercel.app/",
     },
     {
-      id: 4,
-      title: "PixelMind Ai",
-      description:
-        "Award-winning interactive 3D experience featuring smooth animations, particle effects, and immersive storytelling for a creative agency.",
-      image: "/pixelmidndai.png",
-      skills: ["Three.js", "GSAP", "WebGL", "React"],
-      featured: true,
-      gradient: "from-emerald-600/20 to-teal-600/20",
-      urlToNavigate: "https://pixel-mind-ai-two.vercel.app/",
-    },
-    {
       id: 5,
-      title: "AI Content Studio",
+      title: "PixelMind AI",
       description:
-        "Intelligent content creation platform with AI-powered writing assistance and real-time collaboration features.",
-      image: "/ecommerce.png",
-      skills: ["Next.js", "OpenAI", "Redux", "Tailwind"],
+        "An AI-powered web application for object detection, emotion detection, and image analysis using integrated models.",
+      image: "/pixelmidndai.png",
+      skills: ["Next.js", "TailwindCSS"],
       gradient: "from-violet-600/20 to-purple-600/20",
       urlToNavigate: "https://pixel-mind-ai-two.vercel.app/",
     },
   ];
+
   const displayedProjects = showAll ? projects : projects.slice(0, 4);
 
   return (
@@ -105,7 +111,6 @@ const Projects = () => {
             {showAll ? "Show Less" : "View All Projects"}
           </button>
         </div>
-        
       </div>
     </section>
   );

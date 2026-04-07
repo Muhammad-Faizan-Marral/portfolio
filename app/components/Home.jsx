@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import React from "react";
 
@@ -6,10 +5,10 @@ const Home = () => {
   return (
     <div className="brightness-125 flex items-center justify-center flex-col gap-5 mt-36">
       <header>
-        <div className="isAvailableSection border-[0.5px] border-[#464545] w-52 p-1.5 h-6 rounded-full bg-white/5 flex items-center justify-center gap-2.5">
+        <div className="isAvailableSection border-[0.5px] border-[#464545] w-60 p-1.5 h-6 rounded-full bg-white/5 flex items-center justify-center gap-2.5">
           <div className="dot-animation h-2 w-2 rounded-full"></div>
           <span className="uppercase text-[12px] text-[#008cff] tracking-wide">
-            Available for freelance
+            Frontend & React Developer
           </span>
         </div>
       </header>
@@ -25,9 +24,9 @@ const Home = () => {
 
       <section>
         <p className="text-[#a1a1aa] max-w-160 px-6 sm:text-[19px] md:text-[21px] tracking-tight font-light text-center leading-[1.7rem]">
-          I craft pixel-perfect digital experiences with a focus on motion,
-          interaction, and accessibility — bridging the gap between design and
-          engineering.
+          I build high-performance, scalable web applications using React,
+          Next.js, and modern JavaScript — focusing on clean UI, smooth
+          interactions, and real-world usability.
         </p>
       </section>
 

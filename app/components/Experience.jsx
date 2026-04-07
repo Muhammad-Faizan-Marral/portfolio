@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const Experience = () => {
@@ -8,70 +7,82 @@ const Experience = () => {
         <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">
           Career Path
         </span>
-        <h2 className="text-3xl md:text-4xl font-bold text-white">Experience</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-white">
+          Experience
+        </h2>
       </div>
+
       <div className="relative pl-8 md:pl-0">
-        {/* <!-- Vertical Line --> */}
+        
         <div className="absolute left-3 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/20 to-transparent -translate-x-1/2"></div>
-        {/* <!-- Item 1 --> */}
+
+        {/* INTERNSHIP */}
         <div className="relative mb-12 md:flex justify-between items-center group w-full ">
           <div className="md:w-[45%] mb-4 md:mb-0 md:text-right order-1">
             <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">
-              Senior Front-End Developer
+              Full Stack Web Development Intern
             </h3>
-            <p className="text-gray-400">TechCorp Inc.</p>
+            <p className="text-gray-400">softechgenics</p>
           </div>
+
           <div className="absolute left-[-19px] md:left-1/2 w-4 h-4 rounded-full bg-[#0e0e0e] border-2 border-primary shadow-[0_0_10px_rgba(19,164,236,0.5)] -translate-x-1/2 order-2 z-10"></div>
+
           <div className="md:w-[45%] order-3 pl-6 md:pl-0">
             <span className="text-sm font-mono text-primary/80 mb-2 block">
-              2022 - Present
+              Apr 2024 – Jul 2024
             </span>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Leading the frontend team in rebuilding the core platform
-              dashboard. Improved performance by 40% and established a new
-              design system.
+              Developed high-performance web apps with responsive UIs and
+              seamless API integrations, focusing on clean code and scalable
+              architecture{" "}
             </p>
           </div>
         </div>
-        {/* <!-- Item 2 --> */}
-        <div className="relative mb-12 md:flex justify-between items-center group w-full">
+
+        {/* PROJECT-BASED EXPERIENCE */}
+        <div className="relative mb-12 md:flex  justify-between items-center group w-full">
           <div className="md:w-[45%] order-3 md:order-1 mb-4 md:mb-0 md:text-right pl-6 md:pl-0">
             <span className="text-sm font-mono text-primary/80 mb-2 block">
-              2020 - 2022
+              2023 – Present
             </span>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Developed interactive marketing sites for Fortune 500 clients.
-              Collaborated closely with designers to ensure pixel-perfect
-              implementation.
+              Developing high-performance SaaS and AI tools with scalable
+              frontend architectures and a focus on premium UI/UX.
             </p>
           </div>
+
           <div className="absolute left-[-19px] md:left-1/2 w-4 h-4 rounded-full bg-[#0e0e0e] border-2 border-gray-600 group-hover:border-primary transition-colors -translate-x-1/2 order-2 z-10"></div>
+
           <div className="md:w-[45%] order-1 md:order-3 mb-4 md:mb-0">
             <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">
-              UI Developer
+              Frontend Developer (Project-Based)
             </h3>
-            <p className="text-gray-400">Creative Agency</p>
+            <p className="text-gray-400">Personal & Portfolio Projects</p>
           </div>
         </div>
-        {/* <!-- Item 3 --> */}
+
+        {/* EDUCATION */}
         <div className="relative md:flex justify-between items-center group w-full">
-          <div className="md:w-[45%] mb-4 md:mb-0 md:text-right order-1">
+          <div className="md:w-[45%] mb-4  md:mb-0 md:text-right order-1">
             <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">
-              Freelance Web Developer
+              Bachelor of Computer Science
             </h3>
-            <p className="text-gray-400">Self Employed</p>
+            <p className="text-gray-400">Islamia University Bahawalpur</p>
           </div>
+
           <div className="absolute left-[-19px] md:left-1/2 w-4 h-4 rounded-full bg-[#0e0e0e] border-2 border-gray-600 group-hover:border-primary transition-colors -translate-x-1/2 order-2 z-10"></div>
+
           <div className="md:w-[45%] order-3 pl-6 md:pl-0">
             <span className="text-sm font-mono text-primary/80 mb-2 block">
-              2018 - 2020
+              2021 – 2025
             </span>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Built custom WordPress themes and Shopify stores for small
-              businesses. Managed full project lifecycle from concept to
-              deployment.
+              Bridging the gap between CS theory and practical web development
+              by building robust, real-world applications with a focus on
+              efficient architecture.
             </p>
           </div>
+          
         </div>
       </div>
     </div>

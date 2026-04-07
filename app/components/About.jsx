@@ -13,10 +13,10 @@ const About = () => {
             </h2>
             <div className="space-y-6 text-gray-400 leading-relaxed text-lg">
               <p>
-               Hi, I&apos;m Muhammad Faizan — a detail-oriented Front-End Developer passionate about building fast, beautiful, and accessible web experiences.
+               Hi, I&apos;m Muhammad Faizan — a Frontend & React Developer focused on building fast, scalable, and user-centric web applications.
               </p>
               <p>
-            My journey began with a deep curiosity for how the web works. That curiosity evolved into a career focused on turning design concepts into fully-realized, production-ready interfaces that users love to interact with.
+           I specialize in turning ideas into production-ready interfaces using modern technologies like Next.js, TypeScript, and TailwindCSS. I have hands-on experience in state management, API integration, and building SaaS-style applications.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <div className="flex items-center gap-2 text-white">
