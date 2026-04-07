@@ -8,7 +8,7 @@ const Home = () => {
         <div className="isAvailableSection border-[0.5px] border-[#464545] w-fit px-5 py-1.5 h-8 rounded-3xl bg-white/5 flex items-center justify-center gap-2.5 shadow-inner">
           <div className="dot-animation h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></div>
           <span className="uppercase text-[13px] font-medium tracking-[1.5px] text-emerald-400">
-            MUHAMMAD FAIZAN • OPEN TO WORK 2025
+            MUHAMMAD FAIZAN • OPEN TO WORK 2026
           </span>
         </div>
       </header>
