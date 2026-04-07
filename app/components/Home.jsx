@@ -4,11 +4,11 @@ import React from "react";
 const Home = () => {
   return (
     <div className="brightness-125 flex items-center justify-center flex-col gap-5 mt-36">
-      <header>
-        <div className="isAvailableSection border-[0.5px] border-[#464545] w-60 p-1.5 h-6 rounded-full bg-white/5 flex items-center justify-center gap-2.5">
-          <div className="dot-animation h-2 w-2 rounded-full"></div>
-          <span className="uppercase text-[12px] text-[#008cff] tracking-wide">
-            Frontend & React Developer
+    <header>
+        <div className="isAvailableSection border-[0.5px] border-[#464545] w-fit px-5 py-1.5 h-8 rounded-3xl bg-white/5 flex items-center justify-center gap-2.5 shadow-inner">
+          <div className="dot-animation h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></div>
+          <span className="uppercase text-[13px] font-medium tracking-[1.5px] text-emerald-400">
+            MUHAMMAD FAIZAN • OPEN TO WORK 2025
           </span>
         </div>
       </header>
@@ -23,10 +23,8 @@ const Home = () => {
       </main>
 
       <section>
-        <p className="text-[#a1a1aa] max-w-160 px-6 sm:text-[19px] md:text-[21px] tracking-tight font-light text-center leading-[1.7rem]">
-          I build high-performance, scalable web applications using React,
-          Next.js, and modern JavaScript — focusing on clean UI, smooth
-          interactions, and real-world usability.
+        <p className="text-[#a1a1aa] max-w-200 px-6 sm:text-[19px] md:text-[21px] tracking-tight font-light text-center leading-[1.8rem]">
+         I engineer conversion-driven web experiences — React, Next.js & TypeScript with a sharp eye for UI craft, performance, and scalable SaaS architecture.
         </p>
       </section>
 
