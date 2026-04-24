@@ -1,5 +1,8 @@
 @import "tailwindcss";
 :root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
   /* Backgrounds & Base */
   --bg-primary: #0e0e0e; /* Main deep dark background */
   --bg-secondary: #141414; /* Card and section backgrounds */
@@ -57,7 +60,8 @@ body {
   }
 }
 .arrow-movements {
-  animation: premium-bounce 1.5s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
+  animation: premium-bounce 1.5s cubic-bezier(0.45, 0, 0.55, 1) infinite
+    alternate;
 }
 
 @keyframes premium-bounce {
@@ -92,5 +96,5 @@ body {
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(255,255,255,0.2) var(--bg-primary);
+  scrollbar-color: rgba(255, 255, 255, 0.2) var(--bg-primary);
 }
