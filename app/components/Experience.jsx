@@ -20,7 +20,7 @@ const Experience = () => {
         <div className="relative mb-12 md:flex justify-between items-center group w-full ">
           <div className="md:w-[45%] mb-4 md:mb-0 md:text-right order-1">
             <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">
-              Full Stack Web Development Intern
+             Full-Stack Software Engineer Intern
             </h3>
             <p className="text-gray-400">softechgenics</p>
           </div>
@@ -32,9 +32,7 @@ const Experience = () => {
               Apr 2024 – Jul 2024
             </span>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Developed high-performance web apps with responsive UIs and
-              seamless API integrations, focusing on clean code and scalable
-              architecture{" "}
+             Engineered production-grade full-stack features using the MERN ecosystem. Developed robust server layouts, handled system tokens (JWT access/refresh workflows), and integrated real-time micro-interactions while maintaining strict Git compliance.
             </p>
           </div>
         </div>
@@ -46,8 +44,7 @@ const Experience = () => {
               2023 – Present
             </span>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Developing high-performance SaaS and AI tools with scalable
-              frontend architectures and a focus on premium UI/UX.
+             Architected standalone financial SaaS solutions and real-time chat infrastructures. Designed secure PostgreSQL and MongoDB database schemas, implemented client-side data caching strategies using TanStack Query, and engineered custom business-logic algorithms like dynamic background stream tracking.
             </p>
           </div>
 
@@ -55,7 +52,7 @@ const Experience = () => {
 
           <div className="md:w-[45%] order-1 md:order-3 mb-4 md:mb-0">
             <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">
-              Frontend Developer (Project-Based)
+              Full-Stack Developer (Independent / Contract)
             </h3>
             <p className="text-gray-400">Personal & Portfolio Projects</p>
           </div>

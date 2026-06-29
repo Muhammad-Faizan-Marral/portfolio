@@ -8,14 +8,14 @@ const Home = () => {
         <div className="isAvailableSection border-[0.5px] border-[#464545] w-fit px-5 py-1.5 h-8 rounded-3xl bg-white/5 flex items-center justify-center gap-2.5 shadow-inner">
           <div className="dot-animation h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></div>
           <span className="uppercase text-[13px] font-medium tracking-[1.5px] text-emerald-400">
-            MUHAMMAD FAIZAN • OPEN TO WORK 2026
+           MUHAMMAD FAIZAN • FULL STACK ENGINEER • 2026
           </span>
         </div>
       </header>
 
       <main className="flex items-center justify-center ">
         <h1 className="text-[13vw] lg:text-[7.4vw] font-extrabold tracking-tighter leading-[1] text-center">
-          Front-End <br />
+         Full-Stack <br />
           <span className="bg-[linear-gradient(140deg,rgba(11,160,219,1)_28%,rgba(102,87,199,1)_49%,rgba(156,0,143,1)_64%)] bg-clip-text text-transparent inline-block drop-shadow-sm">
             Developer
           </span>
@@ -24,7 +24,7 @@ const Home = () => {
 
       <section>
         <p className="text-[#a1a1aa] max-w-200 px-6 sm:text-[19px] md:text-[21px] tracking-tight font-light text-center leading-[1.8rem]">
-         I engineer conversion-driven web experiences — React, Next.js & TypeScript with a sharp eye for UI craft, performance, and scalable SaaS architecture.
+      I architect end-to-end web applications—combining resilient MERN & Next.js backends with high-fidelity frontend craft, real-time WebSockets, and production-ready AI pipelines.
         </p>
       </section>
 
